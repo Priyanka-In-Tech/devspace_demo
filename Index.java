@@ -11,20 +11,28 @@ public class Index {
         int a=sc.nextInt();
         System.out.print("Enter the number 2=");
         int b=sc.nextInt();
-        System.out.print("Enter an oprater= (+ ,-,*,%)");
+        System.out.print("Enter an oprater= (+ ,-,*,/)");
         String operator=sc.next();
 
-        if(operator.equals("+")){
-            System.out.println(a+b);
-        }
-        else if (operator.equals("-")){
-            System.out.println(a-b);
-        }
-        else if (operator.equals("*")){
-            System.out.println(a*b);
-        }
-        else if (operator.equals("%")){
-            System.out.println(a%b);
+        switch (operator){
+            case "+":
+                Syastem.out.println("Result"+ (a+b));
+                break;
+
+                case "-":
+                Syastem.out.println("Result"+ (a-b));
+                break;
+
+                case "*":
+                Syastem.out.println("Result"+ (a*b));
+                break;
+
+                case "/":
+                Syastem.out.println("Result"+ (a/b));
+                break;
+
+                default:System.out.println("invalid operator");
+                break;
         }
 
 
